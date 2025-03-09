@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions.net - Soluções em Tecnologia e Mídia Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>TechSolutions.net</h1>
+        <p>Soluções em Tecnologia e Mídia Online</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#app">Nosso Aplicativo</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Seção Inicial -->
+    <section id="home">
+        <h2>Bem-vindo à TechSolutions.net</h2>
+        <p>Meu nome é <strong>Micael Bardim</strong>, sou o fundador e único colaborador desta empresa localizada no coração do <strong>Rio Grande do Sul</strong>.</p>
+        <p>Aqui, oferecemos um <strong>aplicativo gratuito</strong> para reprodução de mídia online, desenvolvido para proporcionar a melhor experiência em streaming e entretenimento.</p>
+        <a href="#app" class="btn">Baixe Agora</a>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>A <strong>TechSolutions.net</strong> nasceu da paixão por tecnologia e da vontade de oferecer soluções simples e eficientes para o dia a dia.</p>
+        <p>Como uma empresa individual, eu, <strong>Micael Bardim</strong>, cuido pessoalmente de cada detalhe, desde o desenvolvimento até o suporte ao cliente. Isso garante um atendimento personalizado e de qualidade para todos os usuários.</p>
+        <h3>Nossa Missão</h3>
+        <p>Oferecer ferramentas tecnológicas acessíveis e de alta qualidade, focadas em melhorar a experiência digital dos nossos usuários.</p>
+        <h3>Nosso Diferencial</h3>
+        <ul>
+            <li>Aplicativo <strong>gratuito</strong> e fácil de usar.</li>
+            <li>Desenvolvido com foco na <strong>experiência do usuário</strong>.</li>
+            <li>Suporte dedicado e personalizado.</li>
+        </ul>
+    </section>
+
+    <!-- Seção Nosso Aplicativo -->
+    <section id="app">
+        <h2>Nosso Aplicativo</h2>
+        <p><strong>TechSolutions Player</strong></p>
+        <p>Nosso aplicativo de mídia online foi criado para quem busca praticidade e qualidade na reprodução de conteúdos.</p>
+        <h3>Principais Funcionalidades:</h3>
+        <ul>
+            <li>Reprodução de vídeos, músicas e podcasts.</li>
+            <li>Interface intuitiva e fácil de navegar.</li>
+            <li>Compatível com diversos formatos de mídia.</li>
+            <li>Totalmente <strong>gratuito</strong> e sem custos ocultos.</li>
+        </ul>
+        <h3>Como Baixar:</h3>
+        <ol>
+            <li>Clique no botão abaixo.</li>
+            <li>Siga as instruções de instalação.</li>
+            <li>Comece a usar e aproveite!</li>
+        </ol>
+        <a href="https://drive.google.com/uc?export=download&id=1oTmqLAQMX-sMqH4_ZYAs5YkFcKU3CPBC" class="btn" download="TechSolutionsPlayer.apk">Baixar Agora</a>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para dúvidas, sugestões ou suporte. Estou à disposição para ajudar!</p>
+        <p><strong>E-mail:</strong> micaelbardimtech@gmail.com</p>
+        <p><strong>WhatsApp:</strong> (54) 97124880</p>
+        <p><strong>Localização:</strong> Rio Grande do Sul, Brasil</p>
+        <h3>Formulário de Contato:</h3>
+        <form action="https://formspree.io/f/mqapzrpe" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido com ❤️ no Rio Grande do Sul.</p>
+        <p>© 2023 TechSolutions.net - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
