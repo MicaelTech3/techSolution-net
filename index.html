@@ -135,10 +135,10 @@
         <h3>Como Baixar:</h3>
         <ol>
             <li>Clique no botão abaixo.</li>
-            <li>Siga as instruções de instalação.</li>
+            <li>Escolha o local para salvar o arquivo.</li>
             <li>Comece a usar e aproveite!</li>
         </ol>
-        <a href="https://drive.google.com/uc?export=download&id=1oTmqLAQMX-sMqH4_ZYAs5YkFcKU3CPBC" class="btn" download="TechSolutionsPlayer.apk">Baixar Agora</a>
+        <a href="https://drive.google.com/uc?export=download&id=1lVdtNzDkqPXbZNwn837p7xxd1zqhm6Ym" id="downloadBtn" class="btn">Baixar Agora</a>
     </section>
 
     <!-- Seção Contato -->
@@ -165,8 +165,22 @@
 
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2023 TechSolutions.net - Todos os direitos reservados.</p>
+        <p>© 2023 TechSolutions.net - Todos os direitos reservados.</p>
         <a href="https://dsplay-ed00c.web.app/" class="btn">Voltar ao Dsplay</a>
     </footer>
+
+    <!-- JavaScript para download direto -->
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function(event) {
+            event.preventDefault(); // Impede o comportamento padrão do link
+            const url = this.href;
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'Dsplay.apk'; // Nome do arquivo
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link); // Remove o elemento temporário
+        });
+    </script>
 </body>
 </html>
