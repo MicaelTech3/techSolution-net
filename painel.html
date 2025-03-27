@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dsigner - Painel</title>
+    <link rel="stylesheet" href="painel.css">
+</head>
+<body>
+    <header class="painel-header">
+        <div class="header-content">
+            <h1>Dsigner Painel</h1>
+            <p>Bem-vindo ao painel de controle da Dsigner</p>
+        </div>
+        <nav class="painel-menu">
+            <ul>
+                <li><a href="#menu" class="nav-link" data-section="menu-section">Menu</a></li>
+                <li><a href="#app" class="nav-link" data-section="app-section">App</a></li>
+                <li><a href="#perfil" class="nav-link" data-section="perfil-section">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="painel-content">
+        <!-- Seção Menu (antiga Lista de TVs) -->
+        <section id="menu-section" class="content-section">
+            <div class="section-content">
+                <h2>Menu</h2>
+                <p>Em breve: opções do menu.</p>
+            </div>
+        </section>
+
+        <!-- Seção App -->
+        <section id="app-section" class="content-section active">
+            <div class="app-section">
+                <h2>App</h2>
+                <p><strong>Baixar App:</strong> <a href="Dsigner.apk" download="Dsigner.apk" id="download-link">Clique para baixar</a></p>
+                <div class="demo-area">
+                    <h3>Como instalar</h3>
+                    <div class="gallery">
+                        <img src="logos/logo Dsigner.png" alt="Screenshot 1">
+                        <img src="logos/logo Dsigner 2.png" alt="Screenshot 2">
+                        <img src="logos/logo_Dsigner_2.png" alt="Screenshot 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Perfil -->
+        <section id="perfil-section" class="content-section">
+            <div class="section-content">
+                <h2>Perfil</h2>
+                <p><strong>Email:</strong> <span id="user-email">Carregando...</span></p>
+                <button id="logout-btn">Sair</button>
+            </div>
+        </section>
+    </main>
+    <script src="painel.js"></script>
+</body>
+</html>
