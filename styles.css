@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #0a0f2b;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #00d4ff;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+.logo h1 {
+    color: #00d4ff;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+}
+
+.logo p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    color: #00d4ff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00d4ff;
+}
+
+main {
+    background-color: #1a1f3b;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.content-section {
+    display: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Área de Login */
+.login-area {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2a2f5b;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+}
+
+.login-area h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00d4ff;
+}
+
+.login-area label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffffff;
+}
+
+.login-area input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #00d4ff;
+    border-radius: 5px;
+    background-color: #0a0f2b;
+    color: #ffffff;
+}
+
+.login-area button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00d4ff;
+    border: none;
+    border-radius: 5px;
+    color: #0a0f2b;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-area button:hover {
+    background-color: #00b3d1;
+}
+
+/* Seção App */
+.app-content {
+    padding: 20px;
+}
+
+.app-content p {
+    margin: 10px 0;
+}
+
+.app-content a {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+.app-content a:hover {
+    text-decoration: underline;
+}
+
+/* Área de Demonstração */
+.demo-area {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.demo-area h2 {
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #00d4ff;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery cumprir img:hover {
+    transform: scale(1.05);
+}
+
+/* Seção Sobre */
+.sobre-content {
+    padding: 20px;
+}
+
+.sobre-content h2 {
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+.sobre-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2a2f5b;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Seção Support */
+.support-content {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2a2f5b;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+}
+
+.support-content h2 {
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+.support-content label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffffff;
+}
+
+.support-content input,
+.support-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #00d4ff;
+    border-radius: 5px;
+    background-color: #0a0f2b;
+    color: #ffffff;
+}
+
+.support-content textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.support-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00d4ff;
+    border: none;
+    border-radius: 5px;
+    color: #0a0f2b;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.support-content button:hover {
+    background-color: #00b3d1;
+}
